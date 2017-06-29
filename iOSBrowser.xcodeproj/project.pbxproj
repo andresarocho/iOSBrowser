@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64C2024F82744D05474CD446 /* Pods_iOSBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA3407C835CFA7D0F46EEAB3 /* Pods_iOSBrowser.framework */; };
 		6920BED91F045E8900922757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6920BED81F045E8900922757 /* AppDelegate.swift */; };
-		6920BEDB1F045E8900922757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6920BEDA1F045E8900922757 /* ViewController.swift */; };
+		6920BEDB1F045E8900922757 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6920BEDA1F045E8900922757 /* WebViewController.swift */; };
 		6920BEDE1F045E8900922757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6920BEDC1F045E8900922757 /* Main.storyboard */; };
 		6920BEE01F045E8900922757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6920BEDF1F045E8900922757 /* Assets.xcassets */; };
 		6920BEE31F045E8900922757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6920BEE11F045E8900922757 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50533787BAF0824B53D8131E /* Pods-iOSBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBrowser/Pods-iOSBrowser.release.xcconfig"; sourceTree = "<group>"; };
 		6920BED51F045E8900922757 /* iOSBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6920BED81F045E8900922757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6920BEDA1F045E8900922757 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6920BEDA1F045E8900922757 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		6920BEDD1F045E8900922757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6920BEDF1F045E8900922757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6920BEE21F045E8900922757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6920BEE41F045E8900922757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2C153CBC63C98084F1AA628 /* Pods-iOSBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSBrowser/Pods-iOSBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		CA3407C835CFA7D0F46EEAB3 /* Pods_iOSBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C2024F82744D05474CD446 /* Pods_iOSBrowser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13DC626D95B96FBEF1D6B065 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2C153CBC63C98084F1AA628 /* Pods-iOSBrowser.debug.xcconfig */,
+				50533787BAF0824B53D8131E /* Pods-iOSBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		437A58B223FC5FD75527513E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA3407C835CFA7D0F46EEAB3 /* Pods_iOSBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6920BECC1F045E8900922757 = {
 			isa = PBXGroup;
 			children = (
 				6920BED71F045E8900922757 /* iOSBrowser */,
 				6920BED61F045E8900922757 /* Products */,
+				13DC626D95B96FBEF1D6B065 /* Pods */,
+				437A58B223FC5FD75527513E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,7 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				6920BED81F045E8900922757 /* AppDelegate.swift */,
-				6920BEDA1F045E8900922757 /* ViewController.swift */,
+				6920BEDA1F045E8900922757 /* WebViewController.swift */,
 				6920BEDC1F045E8900922757 /* Main.storyboard */,
 				6920BEDF1F045E8900922757 /* Assets.xcassets */,
 				6920BEE11F045E8900922757 /* LaunchScreen.storyboard */,
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6920BEE71F045E8900922757 /* Build configuration list for PBXNativeTarget "iOSBrowser" */;
 			buildPhases = (
+				0528A35A3BD531E04D27A881 /* [CP] Check Pods Manifest.lock */,
 				6920BED11F045E8900922757 /* Sources */,
 				6920BED21F045E8900922757 /* Frameworks */,
 				6920BED31F045E8900922757 /* Resources */,
+				78630227114B15F96A97E877 /* [CP] Embed Pods Frameworks */,
+				725557A5AAB9674607D06D82 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +158,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0528A35A3BD531E04D27A881 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		725557A5AAB9674607D06D82 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSBrowser/Pods-iOSBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78630227114B15F96A97E877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSBrowser/Pods-iOSBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6920BED11F045E8900922757 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6920BEDB1F045E8900922757 /* ViewController.swift in Sources */,
+				6920BEDB1F045E8900922757 /* WebViewController.swift in Sources */,
 				6920BED91F045E8900922757 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +333,7 @@
 		};
 		6920BEE81F045E8900922757 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C153CBC63C98084F1AA628 /* Pods-iOSBrowser.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSBrowser/Info.plist;
@@ -270,6 +346,7 @@
 		};
 		6920BEE91F045E8900922757 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50533787BAF0824B53D8131E /* Pods-iOSBrowser.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSBrowser/Info.plist;
@@ -299,6 +376,7 @@
 				6920BEE91F045E8900922757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
